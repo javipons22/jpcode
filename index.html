@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800,100|Oswald|Press+Start+2P" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="animate.css" type="text/css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div id="particles-js">
+    <div class="code">
+      <div id="typ-strings">
+        <p>
+
+
+        <?php</br>
+  mysql_connect("hostname", "user", "password");</br>
+  mysql_select_db("mydb");</br>
+  $result = mysql_query("select * from mytable");</br>
+  while ($row = mysql_fetch_object($result)) {</br>
+      echo $row->user_id;</br>
+      echo $row->fullname;</br>
+  }</br>
+  mysql_free_result($result);</br>
+  ?></br>
+  </br>
+  <?php</br>
+  $mystring = 'abc';</br>
+  $findme   = 'a';</br>
+  $pos = strpos($mystring, $findme);</br>
+  </br>
+  // Note our use of ===.  Simply == would not work as expected</br>
+  // because the position of 'a' was the 0th (first) character.</br>
+  if ($pos === false) {</br>
+      echo "The string '$findme' was not found in the string '$mystring'";</br>
+  } else {</br>
+      echo "The string '$findme' was found in the string '$mystring'";</br>
+      echo " and exists at position $pos";</br>
+  }</br>
+  ?></br>
+  </br>
+      $( document ).ready(function() {</br>
+          console.log( "document loaded" );</br>
+      });</br>
+
+
+
+      </p>
+
+
+      </div>
+      <span id="typ"></span></h1>
+      </div>
+
+  </div>
+    <h1 class="logo">
+    <div id="typed-strings">
+      <p>Design.</p>
+      <p>Development.</p>
+    </div>
+    WEB
+    <span id="typed"></span></h1>
+    </div>
+    <div class="contenedor-boton">
+    <a href="#segunda"><span class="boton">Quiero Ver!</span></a>
+    </div>
+    <div id="segunda">
+      <h1 class="titulo-segunda">BIENVENIDO</h1>
+      <h1 class="segundo-titulo-segunda">Esto es</h1>
+    </div>
+    <div id="tercera">
+      <h1 class="titulo-segunda">BIENVENIDO</h1>
+      <h1 class="segundo-titulo-segunda">Esto es</h1>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+    <script src="typed.js"></script>
+    <script>
+    	document.addEventListener('DOMContentLoaded', function(){
+    		Typed.new('#typed', {
+    			stringsElement: document.getElementById('typed-strings'),
+          loop:true
+    		});
+    	});
+      document.addEventListener('DOMContentLoaded', function(){
+    		Typed.new('#typ', {
+    			stringsElement: document.getElementById('typ-strings'),
+          loop:true,
+          typeSpeed: -100,
+    		});
+    	});
+    </script>
+    <script src="smooth-scroll.js"></script>
+
+
+  </body>
+</html>
